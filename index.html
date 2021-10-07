@@ -7,36 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- Bootstrap CSS -->
+  <link href="style.css" rel="stylesheet" type="text/css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700" rel="stylesheet" />
-  <style>
-    html {
-      font-size: 14px;
-    }
-
-    body {
-      margin: 0;
-      box-sizing: border-box;
-      font-family: Merriweather, serif;
-    }
-
-    .para {
-      line-height: 2rem;
-      letter-spacing: 0.0933333px;
-      margin-bottom: 2.2857rem;
-      font-size: 1rem;
-    }
-
-    .stick-to-top{
-      height: 100%;
-      z-index: auto;
-      position: sticky;
-      display: flex;
-      flex-direction: column;
-      top:6rem;
-    }
-  </style>
   <title>Frontend</title>
 </head>
 
@@ -54,8 +28,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul
-          style="display: flex;flex-direction: row;list-style: none;margin-left: auto;align-items: center;margin-top: 1rem;font-size: 1.3rem;"
-          class="me-5">
+          class="navy-nav me-5">
           <li class="nav-item dropdown">
             <a style="color: black;" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">
@@ -122,212 +95,204 @@
     </div>
   </nav>
 
-  <section class="intro p-5" style="height: 80vh; width: 100%; background-color: #101d42">
-    <div class="container p-5 mx-auto" style="width: 80%; line-height: 2rem; font-weight: 500">
-      <div class="row p-5">
-        <div class="col">
-          <h1 style="color: white; font-size: 3rem">
-            How to Become a Web Developer
-          </h1>
-          <div style="
-                height: 5px;
-                width: 48px;
-                background-color: #ffcf00;
-                margin: 20px 0;
-              "></div>
-          <p style="color: white; font-size: 1.1rem">
-            BrainStation's Web Developer career guide is intended to help you
-            take the first steps toward a lucrative career in web development.
-            The guide provides an in-depth overview of the development skills
-            you should learn, the best web development training options,
-            career paths in web development, how to become a Web Developer,
-            and more.
-          </p>
-        </div>
-        <div class="col">
-          <img src="https://dvrfp7vt6y4co.cloudfront.net/edb0f322-9882-4644-80bd-5f8818b10490/1x.webp" class="img-fluid"
-            alt="..." />
-        </div>
-      </div>
+  <section class="intro p-5">
+    <div class="intro-col-1">
+      <h1 style="color: white; font-size: 3rem">
+        How to Become a Web Developer
+      </h1>
+      <div style="
+            height: 5px;
+            width: 48px;
+            background-color: #ffcf00;
+            margin: 20px 0;
+          "></div>
+      <p style="color: white; font-size: 1.1rem">
+        BrainStation's Web Developer career guide is intended to help you
+        take the first steps toward a lucrative career in web development.
+        The guide provides an in-depth overview of the development skills
+        you should learn, the best web development training options,
+        career paths in web development, how to become a Web Developer,
+        and more.
+      </p>
+    </div>
+    <div class="intro-col-2">
+      <img src="https://dvrfp7vt6y4co.cloudfront.net/edb0f322-9882-4644-80bd-5f8818b10490/1x.webp" class="img-fluid"
+        alt="..." />
     </div>
   </section>
 
   <section class="main-content">
-    <div class="container">
-      <div class="row p-5" style="justify-content: center;position: relative;">
-        <div class="col-4 stick-to-top">
-          <h4 class="mb-3">Web Developer</h4>
-          <ul style="width: 80%; font-size: 1.1rem" class="nav flex-column mb-5">
-            <li class="nav-item mb-3">
-              <a class="nav-link active" aria-current="page" href="#">The Basics</a>
-            </li>
-            <li class="nav-item mb-3">
-              <a class="nav-link" href="#">On The Job</a>
-            </li>
-          </ul>
-          <h4 class="mb-3">How to Become a Web Developer</h4>
-          <ul style="width: 80%; font-size: 1.1rem" class="nav flex-column">
-            <li class="nav-item mb-3">
-              <a class="nav-link active" aria-current="page" href="#">Skills</a>
-            </li>
-            <li class="nav-item mb-3">
-              <a class="nav-link" href="#">Career Path</a>
-            </li>
-            <li class="nav-item mb-3">
-              <a class="nav-link" href="#">Getting The Job</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-7">
-          <h1 style="font-weight:550;font-size: 2.3rem;">
-            How Do You Become a Web Developer?
-          </h1>
-          <div style="
-                height: 5px;
-                width: 48px;
-                background-color: #ffcf00;
-                margin: 20px 0;
-              " class="mb-5"></div>
-          <p class="para">
-            To become a Web Developer, you should have an understanding of
-            HTML, CSS, and JavaScript. It’s also recommended to learn about
-            CSS and CSS frameworks. Developing these fundamental web
-            development skills will give you the foundation and logic for
-            communicating with programming languages.
-          </p>
-          <p class="para" ">How to become a Web Developer in five steps:</p>
-          <ol style=" margin-bottom: 2.3rem;">
-            <li class="mb-2"><a href="#">Learn web development fundamentals</a></li>
-            <li class="mb-2"><a href="#">Choose a development specialization</a></li>
-            <li class="mb-2"><a href="#">Learn key programming languages for web development</a></li>
-            <li class="mb-2"><a href="#">Work on projects to develop your Web Developer skills</a></li>
-            <li class="mb-2"><a href="#">Build a web development portfolio</a></li>
-            </ol>
-          <h1 style="font-weight:550;font-size: 2.3rem;">
-            1. Learn Web Development Fundamentals
-          </h1>
-          <div style="
-                height: 5px;
-                width: 48px;
-                background-color: #ffcf00;
-                margin: 20px 0;
-              " class="mb-5"></div>
-
-          <p class="para">The best first step to becoming a Web Developer is to start learning web development
-            fundamentals, including an understanding of HTML (Hypertext Markup Language), CSS (Cascading Style Sheets),
-            and JavaScript.</p>
-          <p class="para">Many aspiring Web Developers are now using coding bootcamps to fast-track the learning
-            process. Coding bootcamps have thrived because they are short, immersive, and focused on outcomes and
-            employment – their goal is to develop job-ready skills as efficiently as possible, making them an
-            increasingly worthwhile investment for a would-be Web Developer. According to the job site Indeed, four out
-            of five companies in the U.S. have hired a graduate from a coding bootcamp</p>
-          <p class="para">In fact, the practical advantages of coding bootcamps are only getting clearer over time. For
-            one thing, the field of web development naturally attracts people from all other fields, many of them making
-            mid-career transitions – people for whom a clear and efficient path to skills expansion is a top priority.
-            Further, employers increasingly value skills and experience over education, placing anyone who can prove
-            their abilities on more equal footing with Developers holding a college degree.</p>
-          <p class="para">It’s important to note that Web Developers – more than most other fields – must be committed
-            to ongoing learning to stay on top of changes in web development and programming languages, tools, and
-            trends. This makes mid-career retraining a must whether or not it’s the line of work you started out in.</p>
-
-          <h1 style="font-weight:550;font-size: 2.3rem;">
-            2. Choose a Development Specialization
-          </h1>
-          <div style="
-                height: 5px;
-                width: 48px;
-                background-color: #ffcf00;
-                margin: 20px 0;
-              " class="mb-5"></div>
-          <p class="para">As you continue to grow your skills, you’ll need to choose an area of specialization. But what
-            are the types of web development? All Web Developers are categorized into three main types:</p>
-          <ul
-            style="margin-left: 1.7rem;margin-bottom: 2.29rem;font-size: 1rem; line-height: 2rem;letter-spacing: 00.0933333px; padding-left: 1.7143rem;">
-            <li style="list-style: disc inside;text-indent: -1.43rem;">
-              <p style="display: inline;" class="para">
-                <strong style="display: inline;">Front-End Developer: </strong>
-                A Front-End Developer works on the “client-side” of web development, meaning any portion of the site or
-                app that users interact with. This can include a site’s layout, design, and the way users interact with
-                it.
-              </p>
-            </li>
-            <li style="list-style: disc inside;text-indent: -1.43rem;">
-              <p style="display: inline;" class="para">
-                <strong>Back-End Developer: </strong>
-                A Back-End Developer works on the “server-side” of web development. This is focused on the way a site
-                functions and can include databases, servers, networks and hosting, and more.
-              </p>
-            </li>
-            <li style="list-style: disc inside;text-indent: -1.43rem;">
-              <p style="display: inline;" class="para">
-                <strong>Full-Stack Developer: </strong>
-                A Full-Stack Developer is familiar with both front-and back-end development and works with both sides of
-                a website.
-              </p>
-            </li>
-          </ul>
-
-          <h1 style="font-weight:550;font-size: 2.3rem;">
-            3. Learn Key Programming Languages for Web Development
-          </h1>
-          <div style="
-                    height: 5px;
-                    width: 48px;
-                    background-color: #ffcf00;
-                    margin: 20px 0;
-                  " class="mb-5"></div>
-          <p class="para">Whatever your area of concentration, you’ll need to know how to use a handful of different
-            programming languages for web development and web design. So, what are the most common programming
-            languages?</p>
-          <p class="para">Three families of programming languages form the basic tools involved in virtually all aspects
-            of web development:</p>
-          <ul style="    margin-bottom: 2.28571429rem;
-                font-size: 1rem;
-                line-height: 2rem;
-                letter-spacing: .0933333px;
-                padding-left: 1.71428571rem;">
-            <li style="list-style-image: url(https://brainstation.io/images/v3/icons/check-mark.svg);">HTML (Hypertext
-              Markup Language)</li>
-            <li style="list-style-image: url(https://brainstation.io/images/v3/icons/check-mark.svg);">CSS (Cascading
-              Style Sheets)</li>
-            <li style="list-style-image: url(https://brainstation.io/images/v3/icons/check-mark.svg);">JavaScript</li>
-          </ul>
-          <p class="para">Of course, the list goes on – these are just the beginning. In fact, web development is such a
-            diverse and varied field that the list of all the tasks it can include (and all the coding languages and
-            markup languages you might use to accomplish them) is too long to fit in this space. Fortunately, as a
-            specialist, you can find and concentrate on the ones that work best for you.</p>
-
-          <h1 style="font-weight:550;font-size: 2.3rem;">
-            4. Build Projects to Develop Your Web Developer Skills
-          </h1>
-          <div style="
-                    height: 5px;
-                    width: 48px;
-                    background-color: #ffcf00;
-                    margin: 20px 0;
-                  " class="mb-5"></div>
-          <p class="para">With a grasp of the basics in HTML, CSS, and JavaScript, and a foundation of programming
-            skills, you’re ready to begin building. As you go, you’ll gain experience using an ever-growing set of Web
-            Developer skills. Some of these are technical skills, or “hard” skills, like programming in SQL or Python,
-            using the jQuery library of functions for more efficient programming, or using tools like Git for version
-            control. The best way to improve these web development skills is simply to start messing around – the more
-            you use them, the better you’ll be.</p>
-          <img class="img-fluid"
-            src="	https://dvrfp7vt6y4co.cloudfront.net/17c69843-f1db-4670-bf58-5f04e4ef2e45/1x.webp" alt="...">
-          <p class="para">There are also a number web design skills that are useful for Web Developers to have, with an
-            understanding that responsive design is perhaps the most crucial. While Web Developers are not typically
-            tasked with the overall site design, it’s an advantage for Developers to also have a solid understanding of
-            common design principles. Front-End Developers, in particular, program the screens that users interact with
-            – and they can be far more successful with a good grasp of user-centered design.</p>
-        </div>
+      <div class="main-col-4 stick-to-top">
+        <h4 class="mb-3">Web Developer</h4>
+        <ul style="width: 80%; font-size: 1.1rem" class="nav flex-column mb-5">
+          <li class="nav-item mb-3">
+            <a class="nav-link active" aria-current="page" href="#">The Basics</a>
+          </li>
+          <li class="nav-item mb-3">
+            <a class="nav-link" href="#">On The Job</a>
+          </li>
+        </ul>
+        <h4 class="mb-3">How to Become a Web Developer</h4>
+        <ul style="width: 80%; font-size: 1.1rem" class="nav flex-column">
+          <li class="nav-item mb-3">
+            <a class="nav-link active" aria-current="page" href="#">Skills</a>
+          </li>
+          <li class="nav-item mb-3">
+            <a class="nav-link" href="#">Career Path</a>
+          </li>
+          <li class="nav-item mb-3">
+            <a class="nav-link" href="#">Getting The Job</a>
+          </li>
+        </ul>
       </div>
-    </div>
+      <div class="main-col-7">
+        <h1 style="font-weight:550;font-size: 2.3rem;">
+          How Do You Become a Web Developer?
+        </h1>
+        <div style="
+              height: 5px;
+              width: 48px;
+              background-color: #ffcf00;
+              margin: 20px 0;
+            " class="mb-5"></div>
+        <p class="para">
+          To become a Web Developer, you should have an understanding of
+          HTML, CSS, and JavaScript. It’s also recommended to learn about
+          CSS and CSS frameworks. Developing these fundamental web
+          development skills will give you the foundation and logic for
+          communicating with programming languages.
+        </p>
+        <p class="para">How to become a Web Developer in five steps:</p>
+        <ol style=" margin-bottom: 2.3rem;">
+          <li class="mb-2"><a href="#">Learn web development fundamentals</a></li>
+          <li class="mb-2"><a href="#">Choose a development specialization</a></li>
+          <li class="mb-2"><a href="#">Learn key programming languages for web development</a></li>
+          <li class="mb-2"><a href="#">Work on projects to develop your Web Developer skills</a></li>
+          <li class="mb-2"><a href="#">Build a web development portfolio</a></li>
+          </ol>
+        <h1 style="font-weight:550;font-size: 2.3rem;">
+          1. Learn Web Development Fundamentals
+        </h1>
+        <div style="
+              height: 5px;
+              width: 48px;
+              background-color: #ffcf00;
+              margin: 20px 0;
+            " class="mb-5"></div>
+
+        <p class="para">The best first step to becoming a Web Developer is to start learning web development
+          fundamentals, including an understanding of HTML (Hypertext Markup Language), CSS (Cascading Style Sheets),
+          and JavaScript.</p>
+        <p class="para">Many aspiring Web Developers are now using coding bootcamps to fast-track the learning
+          process. Coding bootcamps have thrived because they are short, immersive, and focused on outcomes and
+          employment – their goal is to develop job-ready skills as efficiently as possible, making them an
+          increasingly worthwhile investment for a would-be Web Developer. According to the job site Indeed, four out
+          of five companies in the U.S. have hired a graduate from a coding bootcamp</p>
+        <p class="para">In fact, the practical advantages of coding bootcamps are only getting clearer over time. For
+          one thing, the field of web development naturally attracts people from all other fields, many of them making
+          mid-career transitions – people for whom a clear and efficient path to skills expansion is a top priority.
+          Further, employers increasingly value skills and experience over education, placing anyone who can prove
+          their abilities on more equal footing with Developers holding a college degree.</p>
+        <p class="para">It’s important to note that Web Developers – more than most other fields – must be committed
+          to ongoing learning to stay on top of changes in web development and programming languages, tools, and
+          trends. This makes mid-career retraining a must whether or not it’s the line of work you started out in.</p>
+
+        <h1 style="font-weight:550;font-size: 2.3rem;">
+          2. Choose a Development Specialization
+        </h1>
+        <div style="
+              height: 5px;
+              width: 48px;
+              background-color: #ffcf00;
+              margin: 20px 0;
+            " class="mb-5"></div>
+        <p class="para">As you continue to grow your skills, you’ll need to choose an area of specialization. But what
+          are the types of web development? All Web Developers are categorized into three main types:</p>
+        <ul
+          style="margin-left: 1.7rem;margin-bottom: 2.29rem;font-size: 1rem; line-height: 2rem;letter-spacing: 00.0933333px; padding-left: 1.7143rem;">
+          <li style="list-style: disc inside;text-indent: -1.43rem;">
+            <p style="display: inline;" class="para">
+              <strong style="display: inline;">Front-End Developer: </strong>
+              A Front-End Developer works on the “client-side” of web development, meaning any portion of the site or
+              app that users interact with. This can include a site’s layout, design, and the way users interact with
+              it.
+            </p>
+          </li>
+          <li style="list-style: disc inside;text-indent: -1.43rem;">
+            <p style="display: inline;" class="para">
+              <strong>Back-End Developer: </strong>
+              A Back-End Developer works on the “server-side” of web development. This is focused on the way a site
+              functions and can include databases, servers, networks and hosting, and more.
+            </p>
+          </li>
+          <li style="list-style: disc inside;text-indent: -1.43rem;">
+            <p style="display: inline;" class="para">
+              <strong>Full-Stack Developer: </strong>
+              A Full-Stack Developer is familiar with both front-and back-end development and works with both sides of
+              a website.
+            </p>
+          </li>
+        </ul>
+
+        <h1 style="font-weight:550;font-size: 2.3rem;">
+          3. Learn Key Programming Languages for Web Development
+        </h1>
+        <div style="
+                  height: 5px;
+                  width: 48px;
+                  background-color: #ffcf00;
+                  margin: 20px 0;
+                " class="mb-5"></div>
+        <p class="para">Whatever your area of concentration, you’ll need to know how to use a handful of different
+          programming languages for web development and web design. So, what are the most common programming
+          languages?</p>
+        <p class="para">Three families of programming languages form the basic tools involved in virtually all aspects
+          of web development:</p>
+        <ul style="    margin-bottom: 2.28571429rem;
+              font-size: 1rem;
+              line-height: 2rem;
+              letter-spacing: .0933333px;
+              padding-left: 1.71428571rem;">
+          <li style="list-style-image: url(https://brainstation.io/images/v3/icons/check-mark.svg);">HTML (Hypertext
+            Markup Language)</li>
+          <li style="list-style-image: url(https://brainstation.io/images/v3/icons/check-mark.svg);">CSS (Cascading
+            Style Sheets)</li>
+          <li style="list-style-image: url(https://brainstation.io/images/v3/icons/check-mark.svg);">JavaScript</li>
+        </ul>
+        <p class="para">Of course, the list goes on – these are just the beginning. In fact, web development is such a
+          diverse and varied field that the list of all the tasks it can include (and all the coding languages and
+          markup languages you might use to accomplish them) is too long to fit in this space. Fortunately, as a
+          specialist, you can find and concentrate on the ones that work best for you.</p>
+
+        <h1 style="font-weight:550;font-size: 2.3rem;">
+          4. Build Projects to Develop Your Web Developer Skills
+        </h1>
+        <div style="
+                  height: 5px;
+                  width: 48px;
+                  background-color: #ffcf00;
+                  margin: 20px 0;
+                " class="mb-5"></div>
+        <p class="para">With a grasp of the basics in HTML, CSS, and JavaScript, and a foundation of programming
+          skills, you’re ready to begin building. As you go, you’ll gain experience using an ever-growing set of Web
+          Developer skills. Some of these are technical skills, or “hard” skills, like programming in SQL or Python,
+          using the jQuery library of functions for more efficient programming, or using tools like Git for version
+          control. The best way to improve these web development skills is simply to start messing around – the more
+          you use them, the better you’ll be.</p>
+        <img class="img-fluid"
+          src="	https://dvrfp7vt6y4co.cloudfront.net/17c69843-f1db-4670-bf58-5f04e4ef2e45/1x.webp" alt="...">
+        <p class="para">There are also a number web design skills that are useful for Web Developers to have, with an
+          understanding that responsive design is perhaps the most crucial. While Web Developers are not typically
+          tasked with the overall site design, it’s an advantage for Developers to also have a solid understanding of
+          common design principles. Front-End Developers, in particular, program the screens that users interact with
+          – and they can be far more successful with a good grasp of user-centered design.</p>
+      </div>
   </section>
 
 
-  <section class="footer" style="height: 80vh;background-color: black;">
-    <div class="footer-wrap" style="display: flex;">
-      <div class="footer-col-1" style="width: 33%;">
+  <section class="footer" style="height: max-content ;background-color: black;">
+    <div class="footer-wrap" >
+      <div class="footer-col-1">
         <img src="logo_pink_borderless.png" class="img-fluid ms-4 mb-5" style="width: 17rem; height:7rem;" alt="">
         <p class="para ms-4" style="color: rgba(200,200,200, 0.8);">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus enim molestiae reprehenderit aliquam
@@ -340,9 +305,9 @@
           beatae dolore, optio nesciunt ratione quos.
         </p>
       </div>
-      <div class="footer-col-2 mt-5" style="width: 67%">
+      <div class="footer-col-2 mt-5">
         <div class="links mb-5" style="display: flex;">
-          <div class="company" style="margin-right: 8rem;">
+          <div class="company">
             <h5 style="color: white;letter-spacing: 0.15rem;">Company</h5>
             <ul class="mt-4" style="font-size: 1rem;letter-spacing: 0.1rem;padding-left: 0;">
               <li style="list-style: none;margin-bottom: 1.2rem;">
@@ -359,7 +324,7 @@
               </li>
             </ul>
           </div>
-          <div class="resources" style="margin-right: 8rem;">
+          <div class="resources">
             <h5 style="color: white;letter-spacing: 0.15rem;">Resources</h5>
             <ul class="mt-4" style="font-size: 1rem;letter-spacing: 0.1rem;padding-left: 0;">
               <li style="list-style: none;margin-bottom: 1.2rem;">
@@ -376,7 +341,7 @@
               </li>
             </ul>
           </div>
-          <div class="support" style="margin-right: 8rem;">
+          <div class="support">
             <h5 style="color: white;letter-spacing: 0.15rem;">Support</h5>
             <ul class="mt-4" style="font-size: 1rem;letter-spacing: 0.1rem;padding-left: 0;">
               <li style="list-style: none;margin-bottom: 1.2rem;">
@@ -437,7 +402,7 @@
         </li>
       </ul>
     </div>
-    <p style="width: fit-content;color: rgba(100, 100, 100, 0.8);margin: auto auto 2rem;">Made with love in India &copy
+    <p style="width: fit-content;color: rgba(100, 100, 100, 0.8);margin: auto auto 0;padding: 2rem 1rem 1rem 2rem;;">Made with love in India &copy
       2021 Techsnap Educations LLP. All Rights Reserved.</p>
   </section>
   <!-- Optional JavaScript; choose one of the two! -->
