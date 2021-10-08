@@ -11,6 +11,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Frontend</title>
 </head>
 
@@ -123,25 +124,67 @@
 
   <section class="main-content">
       <div class="main-col-4 stick-to-top">
-        <h4 class="mb-3">Web Developer</h4>
+        <h4 class="mb-4">Web Developer</h4>
         <ul style="width: 80%; font-size: 1.1rem" class="nav flex-column mb-5">
-          <li class="nav-item mb-3">
-            <a class="nav-link active" aria-current="page" href="#">The Basics</a>
+          <li class="nav-item basics">
+            <div style="display: flex;justify-content: space-between;font-size: 1.14285714rem;font-weight: 600;line-height: 1.5;">
+              <a class="nav-link active mb-3" style="color: black;" aria-current="page" href="#">The Basics</a>
+              <span class="dd-icon-basics"><i class="fa fa-angle-down"></i></span>
+            </div>
+            <ul class="sidebar-ul dd-basics dis-none">
+              <li class="dd-basics-1 mb-3"><a style="text-decoration: none;color: #767676;padding-left: 8px;display: block;" href="#">What Is Web Development</a></li>
+            </ul>
           </li>
-          <li class="nav-item mb-3">
-            <a class="nav-link" href="#">On The Job</a>
+          <li class="nav-item">
+            <div style="display: flex;justify-content: space-between;font-size: 1.14285714rem;font-weight: 600;line-height: 1.5;">
+              <a class="nav-link active mb-3" style="color: black;" aria-current="page" href="#">On The Job</a>
+              <span  class="dd-icon-job"><i class="fa fa-angle-down"></i></span>
+            </div>
+            <ul class="sidebar-ul dd-job dis-none">
+              <li class="dd-job-1 mb-3"><a style="text-decoration: none;color: #767676;padding-left: 8px;display: block;" href="#">What Does a Web Developer Do?</a></li>
+              <li class="dd-job-2 mb-3"><a style="text-decoration: none;color: #767676;padding-left: 8px;display: block;" href="#">What Tools Do Web Developers Use?</a></li>
+              <li class="dd-job-3"><a style="text-decoration: none;color: #767676;padding-left: 8px;display: block;" href="#">Do Web Developers Work From Home?</a></li>
+            </ul>
           </li>
         </ul>
         <h4 class="mb-3">How to Become a Web Developer</h4>
         <ul style="width: 80%; font-size: 1.1rem" class="nav flex-column">
-          <li class="nav-item mb-3">
-            <a class="nav-link active" aria-current="page" href="#">Skills</a>
+          <li class="nav-item">
+            <div style="display: flex;justify-content: space-between;font-size: 1.14285714rem;font-weight: 600;line-height: 1.5;">
+              <a class="nav-link active mb-3" style="color: black;" aria-current="page" href="#">Skills</a>
+              <span  class="dd-icon-skills"><i class="fa fa-angle-down"></i></span>
+            </div>
+            <ul class="sidebar-ul dd-skills dis-none">
+              <li class="dd-skills-1 mb-3"><a style="text-decoration: none;color: #767676;padding-left: 8px;display: block;" href="#">What Skills Do You Need to Be a Web Developor?</a></li>
+              <li class="dd-skills-2 mb-3"><a style="text-decoration: none;color: #767676;padding-left: 8px;display: block;" href="#">Do You Need a Degree to Be a Web Developer?</a></li>
+              <li class="dd-skills-3 mb-3"><a style="text-decoration: none;color: #767676;padding-left: 8px;display: block;" href="#">Why a Web Development Certificate Is Worth It</a></li>
+              <li class="dd-skills-4"><a style="text-decoration: none;color: #767676;padding-left: 8px;display: block;" href="#">Are Coding Bootcamps Worth It?</a></li>
+            </ul>
           </li>
-          <li class="nav-item mb-3">
-            <a class="nav-link" href="#">Career Path</a>
+          <li class="nav-item">
+            <div style="display: flex;justify-content: space-between;font-size: 1.14285714rem;font-weight: 600;line-height: 1.5;">
+              <a class="nav-link active mb-3" style="color: black;" aria-current="page" href="#">Career path</a>
+              <span  class="dd-icon-career"><i class="fa fa-angle-down"></i></span>
+            </div>
+            <ul class="sidebar-ul dd-career dis-none">
+              <li class="dd-career-1 mb-3"><a style="text-decoration: none;color: #767676;padding-left: 8px;display: block;" href="#">Is Web Development a Good Career?</a></li>
+              <li class="dd-career-2 mb-3"><a style="text-decoration: none;color: #767676;padding-left: 8px;display: block;" href="#">How Hard Is It to Become a Web Developer?</a></li>
+              <li class="dd-career-3 mb-3"><a style="text-decoration: none;color: #767676;padding-left: 8px;display: block;" href="#">What Companies Hire Web Developers?</a></li>
+              <li class="dd-career-4 mb-3"><a style="text-decoration: none;color: #767676;padding-left: 8px;display: block;" href="#">How Much Do Web Developers Make?</a></li>
+              <li class="dd-career-5"><a style="text-decoration: none;color: #767676;padding-left: 8px;display: block;" href="#">How Long Does It Take to Become a Web Developer?</a></li>
+            </ul>
           </li>
-          <li class="nav-item mb-3">
-            <a class="nav-link" href="#">Getting The Job</a>
+          <li class="nav-item">
+            <div style="display: flex;justify-content: space-between;font-size: 1.14285714rem;font-weight: 600;line-height: 1.5;">
+              <a class="nav-link active mb-3" style="color: black;" aria-current="page" href="#">Getting The Job</a>
+              <span class="dd-icon-gettingjob"><i class="fa fa-angle-down"></i></span>
+            </div>
+            <ul class="sidebar-ul dd-gettingjob dis-none">
+              <li class="dd-gettingjob-1 mb-3"><a style="text-decoration: none;color: #767676;padding-left: 8px;display: block;" href="#">How to Build a Web Developer Portfolio</a></li>
+              <li class="dd-gettingjob-2 mb-3"><a style="text-decoration: none;color: #767676;padding-left: 8px;display: block;" href="#">Web Developer Cover Letter Templates and Examples</a></li>
+              <li class="dd-gettingjob-3 mb-3"><a style="text-decoration: none;color: #767676;padding-left: 8px;display: block;" href="#">Web Developer Resume Examples</a></li>
+              <li class="dd-gettingjob-4"><a style="text-decoration: none;color: #767676;padding-left: 8px;display: block;" href="#">Web Developer Interview Questions</a></li>
+            </ul>
           </li>
         </ul>
       </div>
@@ -405,19 +448,14 @@
     <p style="width: fit-content;color: rgba(100, 100, 100, 0.8);margin: auto auto 0;padding: 2rem 1rem 1rem 2rem;;">Made with love in India &copy
       2021 Techsnap Educations LLP. All Rights Reserved.</p>
   </section>
-  <!-- Optional JavaScript; choose one of the two! -->
+
+  <script src="script.js"></script>
 
   <!-- Option 1: Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
 
-  <!-- Option 2: Separate Popper and Bootstrap JS -->
-  <!--
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
- 
 </body>
 
 </html>
