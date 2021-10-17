@@ -8,6 +8,9 @@ var careerbtn = document.querySelector('.dd-icon-career');
 var careerdd = document.querySelector('.dd-career');
 var gettingjobbtn = document.querySelector('.dd-icon-gettingjob');
 var gettingjobdd = document.querySelector('.dd-gettingjob');
+var showhideBtn = document.querySelector('.show-hide-text');
+var showhidedd = document.querySelector('.main-col-4');
+var showhideicon = document.querySelector('.fontt');
 
 
 basicsbtn.addEventListener("click", ()=>{
@@ -29,5 +32,19 @@ careerbtn.addEventListener("click", ()=>{
 })
 gettingjobbtn.addEventListener("click", ()=>{
     gettingjobdd.classList.toggle('dis-gettingjob-open');
+
+})
+
+showhideBtn.addEventListener("click", ()=>{
+    if (showhideBtn.innerHTML === 'Hide Table of contents') {
+        showhidedd.classList.toggle('dis-open');
+        showhideicon.classList.toggle('trans');
+        showhideBtn.innerHTML = 'Show Table of contents';
+    } else {
+        showhidedd.classList.toggle('dis-open');
+        showhideicon.classList.toggle('trans');
+        showhideBtn.innerHTML = 'Hide Table of contents';
+    }
+    // showhidedd.classList.toggle('dis-open');
 
 })
