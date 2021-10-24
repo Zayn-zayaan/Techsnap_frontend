@@ -48,3 +48,41 @@ showhideBtn.addEventListener("click", ()=>{
     // showhidedd.classList.toggle('dis-open');
 
 })
+
+
+
+
+
+
+//aside is your sidebar selector
+var aside = document.querySelector('stick-to-top');
+//sticky sidebar on scrolling
+var startScroll = aside.offsetTop;
+var endScroll = window.innerHeight - aside.offsetHeight;
+var currPos = window.scrollY;
+document.addEventListener('scroll', () => {
+    var asideTop = parseInt(aside.style.top.replace('px;', ''));
+    if (window.scrollY < currPos) {
+        //scroll up
+        if (asideTop < startScroll) {
+            aside.style.top = (asideTop + currPos - window.scrollY) + 'px';
+        } else if (asideTop > startScroll && asideTop != startScroll) {
+            aside.style.top = startScroll + 'px';
+        }
+    } else {
+        //scroll down
+        if (asideTop > endScroll) {
+            aside.style.top = (asideTop + currPos - window.scrollY) + 'px';
+        } else if (asideTop < (endScroll) && asideTop != endScroll) {
+            aside.style.top = endScroll + 'px';
+        }
+    }
+    currPos = window.scrollY;
+});
+//this code will bring to you sidebar on refresh page
+function asideToMe() {
+    setTimeout(() => {
+        aside.style.top = startScroll + 'px';
+    }, 300);
+}
+asideToMe();

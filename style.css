@@ -6,6 +6,7 @@ body {
     margin: 0;
     box-sizing: border-box;
     font-family: Merriweather, serif;
+    /* overflow: hidden; */
 }
 
 .para {
@@ -16,7 +17,9 @@ body {
 }
 
 .stick-to-top{
-    height: 100%;
+    max-height: 90vh;
+    width: 100%;
+    overflow: hidden;
     z-index: auto;
     position: sticky;
     display: flex;
@@ -88,6 +91,17 @@ body {
 .main-col-4{
     width: 25%;
     margin-right: 3rem;
+    margin-bottom: 2rem;
+    max-height: 90vh;
+    overflow-y: auto;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;
+    /* overflow: hidden; */
+}
+
+.main-col-4::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
 }
 .main-col-7{
     width: 55%;
@@ -97,7 +111,7 @@ body {
 
 .dis-none{
     height: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
     transition: height 325ms cubic-bezier(0,0,.2,1);
 }
 
