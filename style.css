@@ -105,6 +105,7 @@ body {
     height: 3rem;
     border-top: 1px solid #e7e7e7;
 }
+
 .dis-jobs-open{
     height: 9rem;
     border-top: 1px solid #e7e7e7;
@@ -171,7 +172,7 @@ body {
 }
 
 .dis-open{
-    height: 33rem;
+    height: fit-content;
 }
 
 .trans{
@@ -257,6 +258,7 @@ body {
 @media(max-width:570px){
     .dis-open{
         overflow-y: scroll;
+        height: 33rem;
     }
     .show-hide{
         text-align: center;
@@ -284,8 +286,5 @@ body {
     }
     .intro{
         padding: 0;
-    }
-    .dis-open{
-        border-top: 1px solid #e7e7e7;
     }
 }
